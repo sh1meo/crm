@@ -10,4 +10,8 @@ apiRouter.post('/', async (req, res) => {
   res.status(200).json({ message: 'OK from api' })
 });
 
+apiRouter.post('/subtest', async (req, res) => {
+  res.status(200).json({ message: 'OK from api' })
+});
+
 export default apiRouter;
