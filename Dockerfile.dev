@@ -1,0 +1,10 @@
+# https://gitlab.com/wazzup/docker-images/nodejs/-/blob/master/README.md
+# FROM registry.gitlab.com/wazzup/docker-images/nodejs:18.16.0
+FROM node:18-bullseye
+
+ARG APPLICATION_NAME
+ENV APPLICATION_NAME=${APPLICATION_NAME:-api}
+
+WORKDIR /home/node/waba
+
+CMD ["sh", "-c", "npm install && npm run dev:$APPLICATION_NAME"]
