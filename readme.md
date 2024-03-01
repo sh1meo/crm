@@ -1,7 +1,7 @@
 # О репозитории
 Это какая-то очередная crm, пишушаяся в учебных целях.
 ## Архитектура
-Схема [тут] (./crm_architecture.drawio). Можно скачать и посмотреть [тут] (https://app.diagrams.net/)
+Схема [тут](./crm_architecture.drawio). Можно скачать и посмотреть [тут](https://app.diagrams.net/)
 ### API
 tdb
 ### worker
