@@ -14,4 +14,4 @@ application.use('/api/v1', workerRouterV1);
 const port = 3001;
 application.listen(port, () => {
   console.log('started in port', port)
-})
+}) 
