@@ -8,7 +8,8 @@
     "prod:api": "node dist/apps/api/main",
     "prod:worker": "node dist/apps/api/worker",
     "dev:api": "node apps/api/index.js",
-    "dev:worker": "node apps/worker/index.js"
+    "dev:worker": "node apps/worker/index.js",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "express": "^4.18.3"
   },
   "devDependencies": {
+    "eslint": "^8.57.0",
     "nodemon": "^3.1.0"
   }
 }
