@@ -1,4 +1,4 @@
-import { errors } from '../constants/errors';
+import { errors } from '../constants/errors.js';
 
 class UserService {
 	constructor() {this.roles = ['admin', 'seller'];}

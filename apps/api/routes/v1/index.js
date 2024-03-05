@@ -1,5 +1,5 @@
 import Router from 'express';
-import user from '../../../../libs/services/user';
+import user from '../../../../libs/services/user.js';
 const apiRouter = Router();
 
 apiRouter.get('/', async (req, res) => {
@@ -7,7 +7,7 @@ apiRouter.get('/', async (req, res) => {
 });
 
 apiRouter.post('/check_user_rights', async (req, res) => {
-	const body = req.body; // req = { body: { role: 'seller' } }
+	const body = req.body;
 	try {
 		const rights = user.checkUserRole(body.role);
 		res.status(200).json(rights);
