@@ -38,3 +38,4 @@ lerna-debug.log*
 /tmp
 
 .$crm_architecture.drawio.bkp
+.eslintrc.cjs

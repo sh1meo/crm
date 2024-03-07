@@ -9,7 +9,7 @@ class UserService {
 		if (userRole === 'admin') {
 			return {
 				read: true,
-				write: true
+				write: true,
 			};
 		}
 		return { read: true, write: false };
