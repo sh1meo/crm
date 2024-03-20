@@ -45,4 +45,5 @@ class UserRepository {
 		}
 	}
 }
-module.exports = UserRepository;
+//TODO: нужно создавать и экспортировать экземпляр класса, а не класс. Переделать, когда будет модель готова
+export default UserRepository;

@@ -45,4 +45,5 @@ class DealRepository {
 		}
 	}
 }
-module.exports = DealRepository;
+//TODO: нужно создавать и экспортировать экземпляр класса, а не класс. Переделать, когда будет модель готова
+export default DealRepository;

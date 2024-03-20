@@ -45,4 +45,5 @@ class StageRepository {
 		}
 	}
 }
-module.exports = StageRepository;
+//TODO: нужно создавать и экспортировать экземпляр класса, а не класс. Переделать, когда будет модель готова
+export default StageRepository;

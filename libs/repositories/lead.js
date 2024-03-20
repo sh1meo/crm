@@ -45,4 +45,5 @@ class LeadRepository {
 		}
 	}
 }
-module.exports = LeadRepository;
+//TODO: нужно создавать и экспортировать экземпляр класса, а не класс. Переделать, когда будет модель готова
+export default LeadRepository;
