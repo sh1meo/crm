@@ -45,3 +45,4 @@ class StageRepository {
 		}
 	}
 }
+module.exports = StageRepository;

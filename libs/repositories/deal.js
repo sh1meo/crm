@@ -45,3 +45,4 @@ class DealRepository {
 		}
 	}
 }
+module.exports = DealRepository;

@@ -45,3 +45,4 @@ class ContactRepository {
 		}
 	}
 }
+module.exports = ContactRepository;

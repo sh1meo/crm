@@ -45,3 +45,4 @@ class AccountRepository {
 		}
 	}
 }
+module.exports = AccountRepository;

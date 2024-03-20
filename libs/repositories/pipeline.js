@@ -45,3 +45,4 @@ class PipelineRepository {
 		}
 	}
 }
+module.exports = PipelineRepository;

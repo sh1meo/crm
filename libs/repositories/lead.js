@@ -45,3 +45,4 @@ class LeadRepository {
 		}
 	}
 }
+module.exports = LeadRepository;
