@@ -1,21 +1,29 @@
 services:
-  api:
-    build:
-      context: .
-      dockerfile: ./Dockerfile.dev
-      args:
-        - APPLICATION_NAME=api
+  # api:
+  #   build:
+  #     context: .
+  #     dockerfile: ./Dockerfile.dev
+  #     args:
+  #       - APPLICATION_NAME=api
+  #   ports:
+  #     - "3000:3000"
+  #   volumes:
+  #     - ./:/home/node/waba
+  # worker:
+  #   build:
+  #     context: .
+  #     dockerfile: ./Dockerfile.dev
+  #     args:
+  #       - APPLICATION_NAME=worker
+  #   ports: 
+  #     - "3001:3001"
+  #   volumes:
+  #     - ./:/home/node/waba
+  db:
+    image: postgres
+    restart: always
     ports:
-      - "3000:3000"
-    volumes:
-      - ./:/home/node/waba
-  worker:
-    build:
-      context: .
-      dockerfile: ./Dockerfile.dev
-      args:
-        - APPLICATION_NAME=worker
-    ports: 
-      - "3001:3001"
-    volumes:
-      - ./:/home/node/waba
+      - "54320:5432"
+    environment:
+      POSTGRES_USER: crm
+      POSTGRES_PASSWORD: st4XmkpvBxq4

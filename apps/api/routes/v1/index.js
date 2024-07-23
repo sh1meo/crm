@@ -1,12 +1,25 @@
-import Router from 'express';
+import { Router } from 'express';
 import user from '../../../../libs/services/user.js';
-const apiRouter = Router();
+const router = Router();
+import accountRouter from './account.js';
+import userRouter from './user.js';
+import contactRouter from './contact.js';
+import dealRouter from './deal.js';
+import pipelineRouter from './pipeline.js';
+import stageRouter from './stage.js';
 
-apiRouter.get('/', async (req, res) => {
+router.use('/account', accountRouter);
+router.use('/user', userRouter);
+router.use('/contact', contactRouter);
+router.use('/deal', dealRouter);
+router.use('/pipeline', pipelineRouter);
+router.use('/stage', stageRouter);
+
+router.get('/', async (req, res) => {
 	res.status(200).json({ message: 'OK from api' });
 });
 
-apiRouter.post('/check_user_rights', async (req, res) => {
+router.post('/check_user_rights', async (req, res) => {
 	const body = req.body;
 	try {
 		const rights = user.checkUserRole(body.role);
@@ -17,4 +30,4 @@ apiRouter.post('/check_user_rights', async (req, res) => {
 	
 });
 
-export default apiRouter;
+export default router;
